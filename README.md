@@ -30,31 +30,28 @@ Full-Stack E-Commerce web application with Admin Dashboard & Paytm Payment Gatew
 
 
 **🛠️ Setup Instructions**
-Prerequisites
-Node.js
-MongoDB
-Paytm account for Payment Gateway
-Sendgrid account for Email Service
-Cloudinary account for Cloud Storage
-Installation
-Clone the repository:
+**Prerequisites**
+-Node.js
+-MongoDB
+-Paytm account for Payment Gateway
+-Sendgrid account for Email Service
+-Cloudinary account for Cloud Storage
 
-bash
-Copy code
+**Installation**
+1.Clone the repository:
+
 git clone https://github.com/your-username/e-commerce-mern.git
 cd e-commerce-mern
-Backend Setup:
+
+2.Backend Setup:
 
 Navigate to the backend directory:
-bash
-Copy code
 cd backend
+
 Install dependencies:
-bash
-Copy code
 npm install
 Create a .env file in the backend directory and add the following environment variables:
-env
+
 Copy code
 PORT=5000
 MONGO_URI=your_mongo_uri
@@ -69,40 +66,38 @@ PAYTM_WEBSITE=WEBSTAGING
 PAYTM_CHANNEL_ID=WEB
 PAYTM_INDUSTRY_TYPE_ID=Retail
 PAYTM_CALLBACK_URL=http://localhost:5000/api/payment/callback
+
 Start the backend server:
-bash
-Copy code
 npm start
+
 Frontend Setup:
 
 Navigate to the frontend directory:
-bash
-Copy code
 cd ../frontend
+
 Install dependencies:
-bash
 Copy code
 npm install
+
 Create a .env file in the frontend directory and add the following environment variables:
 env
 Copy code
 REACT_APP_API_URL=http://localhost:5000/api
 REACT_APP_PAYTM_MID=your_paytm_mid
+
 Start the frontend development server:
-bash
 Copy code
 npm start
-Running the Application
-Ensure MongoDB is running.
-Start the backend server (from the backend directory):
-bash
-Copy code
+
+**Running the Application**
+1.Ensure MongoDB is running.
+2.Start the backend server (from the backend directory):
 npm start
-Start the frontend server (from the frontend directory):
-bash
-Copy code
+3.Start the frontend server (from the frontend directory):
 npm start
+
 Open your browser and navigate to http://localhost:3000 to see the application in action.
+
 
 ## 🚀 Features
 
