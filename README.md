@@ -28,6 +28,82 @@ Full-Stack E-Commerce web application with Admin Dashboard & Paytm Payment Gatew
 
 **Mail Service:** [Sendgrid](https://sendgrid.com/)
 
+
+**🛠️ Setup Instructions**
+Prerequisites
+Node.js
+MongoDB
+Paytm account for Payment Gateway
+Sendgrid account for Email Service
+Cloudinary account for Cloud Storage
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/e-commerce-mern.git
+cd e-commerce-mern
+Backend Setup:
+
+Navigate to the backend directory:
+bash
+Copy code
+cd backend
+Install dependencies:
+bash
+Copy code
+npm install
+Create a .env file in the backend directory and add the following environment variables:
+env
+Copy code
+PORT=5000
+MONGO_URI=your_mongo_uri
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+SENDGRID_API_KEY=your_sendgrid_api_key
+PAYTM_MID=your_paytm_mid
+PAYTM_KEY=your_paytm_key
+PAYTM_WEBSITE=WEBSTAGING
+PAYTM_CHANNEL_ID=WEB
+PAYTM_INDUSTRY_TYPE_ID=Retail
+PAYTM_CALLBACK_URL=http://localhost:5000/api/payment/callback
+Start the backend server:
+bash
+Copy code
+npm start
+Frontend Setup:
+
+Navigate to the frontend directory:
+bash
+Copy code
+cd ../frontend
+Install dependencies:
+bash
+Copy code
+npm install
+Create a .env file in the frontend directory and add the following environment variables:
+env
+Copy code
+REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_PAYTM_MID=your_paytm_mid
+Start the frontend development server:
+bash
+Copy code
+npm start
+Running the Application
+Ensure MongoDB is running.
+Start the backend server (from the backend directory):
+bash
+Copy code
+npm start
+Start the frontend server (from the frontend directory):
+bash
+Copy code
+npm start
+Open your browser and navigate to http://localhost:3000 to see the application in action.
+
 ## 🚀 Features
 
 **User Account Management**
