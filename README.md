@@ -29,74 +29,104 @@ Full-Stack E-Commerce web application with Admin Dashboard & Paytm Payment Gatew
 **Mail Service:** [Sendgrid](https://sendgrid.com/)
 
 
-**🛠️ Setup Instructions**
+## 🛠️ Setup Instructions
 **Prerequisites**
--Node.js
--MongoDB
--Paytm account for Payment Gateway
--Sendgrid account for Email Service
--Cloudinary account for Cloud Storage
+
+- Node.js
+
+- MongoDB
+
+- Paytm account for Payment Gateway
+
+- Sendgrid account for Email Service
+
+- Cloudinary account for Cloud Storage
 
 **Installation**
-1.Clone the repository:
+
+**1. Clone the repository:**
 
 git clone https://github.com/your-username/e-commerce-mern.git
-cd e-commerce-mern
+- cd e-commerce-mern
 
-2.Backend Setup:
 
-Navigate to the backend directory:
-cd backend
+**2. Backend Setup:**
 
-Install dependencies:
-npm install
-Create a .env file in the backend directory and add the following environment variables:
+1. Navigate to the backend directory:
+- cd backend
 
-Copy code
+2. Install dependencies:
+- npm install
+
+- Create a .env file in the backend directory and add the following environment variables:
+
+**Copy code:**
+
 PORT=5000
+
 MONGO_URI=your_mongo_uri
+
 JWT_SECRET=your_jwt_secret
+
 CLOUDINARY_CLOUD_NAME=your_cloud_name
+
 CLOUDINARY_API_KEY=your_api_key
+
 CLOUDINARY_API_SECRET=your_api_secret
+
 SENDGRID_API_KEY=your_sendgrid_api_key
+
 PAYTM_MID=your_paytm_mid
+
 PAYTM_KEY=your_paytm_key
+
 PAYTM_WEBSITE=WEBSTAGING
+
 PAYTM_CHANNEL_ID=WEB
+
 PAYTM_INDUSTRY_TYPE_ID=Retail
+
 PAYTM_CALLBACK_URL=http://localhost:5000/api/payment/callback
 
-Start the backend server:
+3. Start the backend server:
+   
 npm start
 
-Frontend Setup:
+**3. Frontend Setup:**
 
-Navigate to the frontend directory:
+1. Navigate to the frontend directory:
+   
 cd ../frontend
 
-Install dependencies:
-Copy code
+2. Install dependencies
+
 npm install
 
-Create a .env file in the frontend directory and add the following environment variables:
-env
-Copy code
+3. Create a .env file in the frontend directory and add the following environment variables:
+
+
 REACT_APP_API_URL=http://localhost:5000/api
+
 REACT_APP_PAYTM_MID=your_paytm_mid
 
-Start the frontend development server:
-Copy code
+4. Start the frontend development server:
+
 npm start
 
 **Running the Application**
-1.Ensure MongoDB is running.
-2.Start the backend server (from the backend directory):
+
+1. Ensure MongoDB is running.
+
+2. Start the backend server (from the backend directory):
+
 npm start
-3.Start the frontend server (from the frontend directory):
+
+3. Start the frontend server (from the frontend directory):
+
 npm start
 
 Open your browser and navigate to http://localhost:3000 to see the application in action.
+
 
 
 ## 🚀 Features
